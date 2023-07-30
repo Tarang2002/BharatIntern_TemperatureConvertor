@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Temperature Convertor</string>
+    <string name="_100">100</string>
+    <string name="_212">212</string>
+    <string name="celsius">CELSIUS</string>
+    <string name="fahrenheit">FAHRENHEIT</string>
+    <string name="todo">imageBtn</string>
+    <string name="convert">CONVERT</string>
+</resources>

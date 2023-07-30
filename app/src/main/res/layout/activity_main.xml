@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/triangle_shape"/>
+
+            <Spinner
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
+                android:id="@+id/spinnerInput"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                />
+
+
+            <EditText
+                android:id="@+id/inputTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/manrope"
+                android:inputType="numberDecimal"
+                android:paddingTop="120sp"
+                android:text="@string/_100"
+                android:textColor="@color/white"
+                android:textSize="80sp" />
+
+
+        </RelativeLayout>
+
+        <!--_________________________________________________________________________-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="66sp"
+                android:layout_marginBottom="150sp"
+                android:id="@+id/outputTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope"
+                android:text="@string/_100"
+                android:textColor="#CB4141"
+                android:textSize="80sp" />
+
+            <Spinner
+                android:id="@+id/spinnerOutput"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/btn"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design"
+        android:text="@string/convert"
+        />
+
+</RelativeLayout>
